@@ -25,7 +25,7 @@ export default class detalle extends Component {
 
     }
 
-    static navigationOptions = {
+    static navigationOptions = { 
         title: 'Curiosidades de Los Insectos',
         headerTintColor: '#fff',
         headerStyle: {
@@ -56,7 +56,7 @@ export default class detalle extends Component {
 
                 {/* Back Side */}
                 <View style={styles.cardprincipal2}>
-                    <Text style={{ color: '#fff',textAlign:'center', fontSize:16, fontWeight:"bold"}}>¿Sabías qué?</Text>
+                    <Text style={{ color: '#e7ff87',textAlign:'center', fontSize:16, fontWeight:"bold"}}>¿Sabías qué?</Text>
                     <Text style={{ color: '#fff',textAlign:'center', fontSize:16}}>{item.texto}</Text>
                 </View>
                 
@@ -70,7 +70,7 @@ export default class detalle extends Component {
             { texto: "Hay miles de especies de abejas, unas viven solas, otras en agujeros en el suelo, algunas no tienen aguijón. La Apis Mellifera (o abeja doméstica) forma colonias de entre 15.000 y 80.000 abejas, dependiendo de su fortaleza, climatología y hábitat.", nombre: "Abeja", imagen:require("./images/Abeja.jpg")},
             { texto: "Según estudios de la Universidad de Harvard, las arañas son capaces de oír muy bien en un radio de hasta tres metros. Puede no parecer mucho, pero en comparación con su tamaño la verdad es que sí lo es, ¡Menuda ventaja, nosotros no las oímos a ellas.", nombre: "Araña", imagen:require("./images/Araña.jpg")},
             { texto: "Las cucarachas no son comedores quisquillosos en absoluto, comen casi cualquier cosa, fruta, pegamento, heces, ¡lo que sea! Incluso pueden comerse a sus congéneres para saciar sus estómagos rugientes. Asqueroso, ¿No?.", nombre: "Cucaracha", imagen:require("./images/Cucarachas.jpg")},
-            { texto: "En el veneno encontrado en las picaduras de las avispas se han encontrado unas sustancias llamadas feromonas. Estas feromonas hacen que otras avispas que perciban esta sustancia química se vuelvan más agresivas.", nombre: "Avispa",imagen:require("./images/Avispa.jpg")},
+            { texto: "En el veneno encontrado en las picaduras de las avispas se han descubierto unas sustancias llamadas feromonas. Estas feromonas hacen que otras avispas que perciban esta sustancia química se vuelvan más agresivas.", nombre: "Avispa",imagen:require("./images/Avispa.jpg")},
             { texto: "Las orugas pueden comer una cantidad enorme durante una etapa del ciclo vital que típicamente dura varias semanas. Algunos consumen 27.000 veces su peso corporal durante esta fase de la vida.", nombre: "Oruga",imagen:require("./images/Oruga.jpg")},
             { texto: "El hábitat de los escarabajos es tan diverso que podemos decir que, con excepción de las zonas árticas, viven en todos los lugares de la Tierra: desde los bosques más frondosos, pasando por los desiertos, hasta llegar a las montañas. Ah, tampoco resisten el agua salada.", nombre: "Escarabajo",imagen:require("./images/Escarabajo.jpg")},
             { texto: "Unos científicos de Australia han descubierto que estos animales usan varias técnicas para aparearse. Los más fuertes cantan y los más débiles se perfuman a fin de atraer a las hembras.", nombre: "Grillo",imagen:require("./images/Grillos.jpg")},
@@ -125,7 +125,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor:'#000',
         borderColor:"white",
-        borderWidth:1,
+        borderTopWidth:1,
+        borderBottomWidth: 1,
     },
 
 })

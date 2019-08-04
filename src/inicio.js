@@ -1,23 +1,27 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View,
-    TouchableOpacity, ImageBackground} from 'react-native';
-
-
+import { StyleSheet, 
+         Text, 
+         View,
+         TouchableOpacity, } from 'react-native';
 
 export default class App extends Component{
     static navigationOptions = {
         header:null
-    
-      }
+    }
+
     render() {
-      return (
-        <View style={styles.container}>
-          <View style={styles.container2}>
-            <Text style={styles.welcome}>Bienvenidos a mi Aplicación Móvil</Text>
-          </View>
-          <Text style={styles.welcome2}>FlashCard Educativo de Insectos</Text>
-          <Text style={styles.welcome3}>Creado por: José Raúl Almendares Servellón</Text>
-          <TouchableOpacity style={{justifyContent: 'center', alignItems: 'center'}} onPress={() => this.props.navigation.navigate('card')}><Text style={styles.Button}>Iniciar</Text></TouchableOpacity>
+        return (
+            <View style={styles.container}>
+
+                <View style={styles.container2}>
+                   <Text style={styles.welcome}>Bienvenidos a mi Aplicación Móvil</Text>
+                </View>
+
+                <Text style={styles.welcome2}>FlashCard Educativo de Insectos</Text>
+
+                <Text style={styles.welcome3}>Creado por: José Raúl Almendares Servellón</Text>
+
+                <TouchableOpacity style={{justifyContent: 'center', alignItems: 'center', fontSize:'50%'}} onPress={() => this.props.navigation.navigate('card')}><Text style={styles.Button}>Iniciar</Text></TouchableOpacity>
         </View>
       );
     }
@@ -40,7 +44,8 @@ export default class App extends Component{
       marginBottom: 15,
     },
     welcome: {
-      fontSize: 20,
+      fontWeight:"bold",
+      fontSize: 22,
       textAlign: 'center',
       margin: 20,
     },
@@ -48,15 +53,14 @@ export default class App extends Component{
     welcome2: {
       fontSize: 16,
       textAlign: 'center',
-      color:'#fff',
+      color:'white',
       marginTop: 10,
     },
 
     welcome3: {
       fontSize: 16,
       textAlign: 'center',
-      color:'#000',
-      fontWeight:"bold",
+      color:'white',
     },
 
     instructions: {
@@ -68,7 +72,7 @@ export default class App extends Component{
     Button: {
       backgroundColor: '#c9dff0',
       padding: 5,
-      marginTop: 15,
+      marginTop: 35,
       fontWeight:"bold",
     },
 
